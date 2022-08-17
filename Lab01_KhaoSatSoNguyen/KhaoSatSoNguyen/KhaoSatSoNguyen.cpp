@@ -53,13 +53,13 @@ int main()
 
  //  cout << "\n";
  //  cout << "----------------------------------------------------------------------\n";
-	string a="01111111";
-	string b = "01011111";
+	string a= "01100111";
+	string b = "01100001";//2
 	
-	cout << a<<" + "<<b<<" = " << Addition(a, b) << "\tis overFlow: " << isoverFlow(a, b)<<"\n";
+	cout << a<<" + "<<b<<" = " << AdditionM(a, b) << "\tis overFlow: " << isoverFlow(a, b)<<"\n";
 	cout << a << " - " << b << " = " << Subtraction(a, b) << "\tis overFlow: " << isoverFlow(a, OppBit(b))<<"\n";
-	cout << "shl(a): " << SHLBit(a)<<"\n";
-	cout << "shr(a): " << SHRBit(a);
+	cout << a << " *M " << b << " = " << MultiplicationM(a, b) << "\n";
+	cout << a << " * " << b << " = " << Multiplication(a, b) << "\n";
    return 0;
 }
 
